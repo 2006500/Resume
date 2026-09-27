@@ -1,0 +1,440 @@
+/* Resume Design File */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eeeeee;
+
+    color: #111111;
+
+    font-family: "Times New Roman", Times, serif;
+
+    line-height: 1.25;
+}
+
+
+.resume {
+    width: 210mm;
+
+    min-height: 297mm;
+
+    margin: 25px auto;
+
+    padding: 24px 30px;
+
+    background-color: white;
+
+    box-shadow:
+        0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Header Part design */
+
+.header {
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+
+
+.header h1 {
+    font-size: 28px;
+
+    font-weight: 500;
+
+    letter-spacing: 0.2px;
+}
+
+
+.job-title {
+    font-size: 20px;
+
+    font-style: italic;
+
+    margin-top: 2px;
+}
+
+
+/* Contact Information Part Design */
+.contact-info {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 5px 9px;
+
+    font-size: 16px;
+
+    margin-top: 9px;
+}
+
+
+/* Section part design */
+
+.section {
+    margin-top: 10px;
+}
+
+
+.section h2 {
+    font-size: 21px;
+
+    font-weight: 700;
+
+    border-bottom: 1.5px solid #333;
+
+    padding-bottom: 2px;
+
+    margin-bottom: 4px;
+}
+
+
+.section p {
+    font-size: 16px;
+}
+
+
+/* Education part design */
+
+.education-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: baseline;
+
+    gap: 15px;
+
+    font-size: 17px;
+}
+
+
+.education-subtitle {
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 17px;
+}
+
+
+.education-subtitle span {
+    font-style: italic;
+}
+
+
+.separator {
+    margin: 0 5px;
+}
+
+
+.date {
+    white-space: nowrap;
+}
+
+/* Projects Part design */
+
+.project-heading {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: baseline;
+
+    gap: 15px;
+
+    font-size: 17px;
+}
+
+
+.project-heading span {
+    margin-right: 5px;
+}
+
+
+.role {
+    margin-top: 1px;
+}
+
+
+.section ul {
+    margin-top: 2px;
+
+    margin-bottom: 1px;
+
+    margin-left: 22px;
+
+    font-size: 16px;
+}
+
+
+.tools {
+    margin-top: 1px;
+}
+
+
+/* Skill Part Design*/
+
+.skill-row {
+    display: grid;
+
+    grid-template-columns: 225px 1fr;
+
+    gap: 10px;
+
+    font-size: 16px;
+
+    margin: 2px 0;
+}
+
+
+.skill-row strong {
+    white-space: nowrap;
+}
+/* For button */
+#githubId {
+    background-color: white;
+
+    border: none;
+}
+
+#linkedInId {
+    background-color: white;
+
+    border: none;
+}
+
+
+/* For Tablet 769px-1100px */
+
+@media screen and (max-width: 1100px) {
+
+    .resume {
+        width: 94%;
+
+        min-height: auto;
+
+        margin: 20px auto;
+
+        padding: 28px 32px;
+    }
+
+
+    .header h1 {
+        font-size: 27px;
+    }
+
+
+    .job-title {
+        font-size: 19px;
+    }
+
+
+    .section h2 {
+        font-size: 20px;
+    }
+
+
+    .education-row,
+    .project-heading {
+        font-size: 16px;
+    }
+
+
+    .skill-row {
+        grid-template-columns: 205px 1fr;
+    }
+
+}
+
+/* Small Tablet 481px-768px */
+
+@media screen and (max-width: 768px) {
+
+    body {
+        background-color: white;
+    }
+
+
+    .resume {
+        width: 100%;
+
+        margin: 0;
+
+        padding: 28px 30px;
+
+        box-shadow: none;
+    }
+
+
+    .header h1 {
+        font-size: 25px;
+    }
+
+
+    .job-title {
+        font-size: 18px;
+    }
+
+
+    .contact-info {
+        font-size: 15px;
+
+        gap: 4px 8px;
+    }
+
+
+    .section {
+        margin-top: 14px;
+    }
+
+
+    .section h2 {
+        font-size: 19px;
+    }
+
+
+    .section p,
+    .section ul,
+    .skill-row {
+        font-size: 15px;
+    }
+
+
+    .education-row,
+    .project-heading {
+        font-size: 15px;
+    }
+
+
+    .skill-row {
+        grid-template-columns: 190px 1fr;
+
+        gap: 7px;
+    }
+
+}
+
+
+/* For Mobile 480 px and below */
+
+@media screen and (max-width: 480px) {
+
+    .resume {
+        padding: 20px 17px 35px;
+    }
+
+
+    .header {
+        margin-bottom: 14px;
+    }
+
+
+    .header h1 {
+        font-size: 22px;
+
+        line-height: 1.15;
+    }
+
+
+    .job-title {
+        font-size: 16px;
+
+        margin-top: 4px;
+    }
+
+
+    .contact-info {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        justify-items: center;
+
+        font-size: 14px;
+
+        gap: 3px;
+
+        margin-top: 9px;
+    }
+
+
+    .section {
+        margin-top: 16px;
+    }
+
+
+    .section h2 {
+        font-size: 18px;
+
+        padding-bottom: 3px;
+    }
+
+
+    .section p,
+    .section ul {
+        font-size: 14px;
+    }
+
+
+    .education-row,
+    .project-heading {
+        display: block;
+
+        font-size: 14px;
+    }
+
+
+    .education-row .date,
+    .project-heading .date {
+        margin-top: 3px;
+    }
+
+
+    .education-subtitle {
+        display: flex;
+
+        justify-content: space-between;
+
+        gap: 10px;
+
+        font-size: 14px;
+    }
+
+
+    .separator {
+        margin: 0 3px;
+    }
+
+
+    .section ul {
+        margin-left: 20px;
+    }
+
+
+    .skill-row {
+        display: block;
+
+        font-size: 14px;
+
+        margin: 5px 0;
+    }
+
+
+    .skill-row strong {
+        display: block;
+
+        margin-bottom: 1px;
+    }
+
+}
+
+
